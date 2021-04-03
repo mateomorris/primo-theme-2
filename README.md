@@ -1,1 +1,1 @@
-# primo-theme-2
+# Built with [primo](https://primo.af)
