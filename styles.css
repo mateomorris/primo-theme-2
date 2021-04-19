@@ -599,12 +599,20 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-tl-xl {
+  border-top-left-radius: 0.75rem;
+}
+
 .rounded-tr-xl {
   border-top-right-radius: 0.75rem;
 }
 
 .rounded-br-xl {
   border-bottom-right-radius: 0.75rem;
+}
+
+.rounded-bl-xl {
+  border-bottom-left-radius: 0.75rem;
 }
 
 .border-2 {
@@ -696,6 +704,10 @@ video {
   line-height: 2.5rem;
 }
 
+.leading-9 {
+  line-height: 2.25rem;
+}
+
 .leading-snug {
   line-height: 1.375;
 }
@@ -726,10 +738,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -750,6 +758,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.mr-24 {
+  margin-right: 6rem;
+}
+
 .mb-24 {
   margin-bottom: 6rem;
 }
@@ -766,8 +778,8 @@ video {
   max-width: 24rem;
 }
 
-.max-w-xl {
-  max-width: 36rem;
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-5xl {
@@ -809,11 +821,6 @@ video {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pb-32 {
@@ -879,6 +886,11 @@ video {
   color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
@@ -897,6 +909,10 @@ video {
 .text-indigo-700 {
   --tw-text-opacity: 1;
   color: rgba(67, 56, 202, var(--tw-text-opacity));
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-5 {
@@ -928,6 +944,11 @@ video {
 .gap-12 {
   grid-gap: 3rem;
   gap: 3rem;
+}
+
+.gap-24 {
+  grid-gap: 6rem;
+  gap: 6rem;
 }
 
 .grid-cols-2 {
@@ -1064,6 +1085,48 @@ video {
 
 /* Default content styles */
 
+.primo-page {
+  font-family: 'Satoshi', sans-serif;
+}
+
+.primo-copy {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem
+}
+
+@media (min-width: 640px) {
+  .primo-copy {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .primo-copy {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .primo-copy {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .primo-copy {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .primo-copy {
+    max-width: 1536px;
+  }
+}
+
 .primo-copy {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1073,14 +1136,14 @@ video {
 
 .primo-copy h1 {
     font-weight: 500;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 3rem;
+    line-height: 1;
   }
 
 .primo-copy h2 {
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
 .primo-copy ol {
@@ -1119,18 +1182,6 @@ video {
     background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgba(17, 24, 39, var(--tw-text-opacity));
-  }
-
-@media (min-width: 1024px) {
-    .primo-copy h1 {
-      font-size: 3rem;
-      line-height: 1;
-    }
-
-    .primo-copy h2 {
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-    }
   }
 
 @media (min-width: 640px) {
